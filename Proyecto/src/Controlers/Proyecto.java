@@ -3,8 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package proyecto;
-
+package Controlers;
+import Views.*;
 /**
  *
  * @author SOPORTE-T
@@ -16,6 +16,8 @@ public class Proyecto {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Login login = new Login();
+        login.setVisible(true);
     }
     
 }
