@@ -7,6 +7,7 @@ package Controlers;
 
 import Views.Login;
 import Views.Main;
+import Models.MUser;
 import javax.swing.JOptionPane;
 
 /**
@@ -36,10 +37,9 @@ public class User {
      * 
      */
     public void LogIn(String name, String password, Login login) {
-        if("SA".equals(name)&&password.equals("1234")){
-            //en esta parte iria la consulta del modelo
+        MUser user = new MUser();
+        if(user.LogIn(name, password)){
             Main principal = new Main();
-            JOptionPane.showMessageDialog(null, "Exito");
             login.dispose();
             principal.setVisible(true);
         }else{
