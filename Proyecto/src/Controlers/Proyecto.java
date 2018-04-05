@@ -7,7 +7,9 @@ package Controlers;
 import Views.*;
 /**
  *
- * @author SOPORTE-T
+ * @author rots
+ * @since 2018
+ * @version 0.1
  */
 public class Proyecto {
 

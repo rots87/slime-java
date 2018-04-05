@@ -18,6 +18,8 @@ package Controlers;
 /**
  *
  * @author rots
+ * @since 2018
+ * @version 0.1
  */
 public class Administrator {
     
