@@ -22,6 +22,7 @@ import Views.Login;
 import Views.Main;
 import Models.MUser;
 import javax.swing.JOptionPane;
+import java.util.Random;
 
 /**
  *
@@ -58,6 +59,28 @@ public class User {
         }else{
             JOptionPane.showMessageDialog(null, "Error de contraseña, intenta de nuevo");
         }
+    }
+    
+    public String GenCodImp(){
+        Random rand = new Random();
+        String pass=null;
+        pass=String.valueOf(rand.nextInt(100000));
+        while(pass.length()<5){
+         pass="0"+pass;   
+        }
+        return pass;
+    }
+    
+    public String GenPass(){
+        String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+        StringBuilder salt = new StringBuilder();
+        Random rnd = new Random();
+        while (salt.length() < 8) { // length of the random string.
+            int index = (int) (rnd.nextFloat() * SALTCHARS.length());
+            salt.append(SALTCHARS.charAt(index));
+        }
+        String saltStr = salt.toString();
+        return saltStr;
     }
     
     
