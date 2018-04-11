@@ -51,7 +51,7 @@ public class new_user extends javax.swing.JFrame {
 
         jLabel3.setText("Cod. Impresion");
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Generadores de contraseñas"));
         jPanel1.setToolTipText("");
         jPanel1.setName("Auto generar"); // NOI18N
 
@@ -124,14 +124,14 @@ public class new_user extends javax.swing.JFrame {
                             .addComponent(jTextField2)
                             .addComponent(jTextField3)))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(168, Short.MAX_VALUE)
+                        .addContainerGap(158, Short.MAX_VALUE)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(24, 24, 24))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(54, Short.MAX_VALUE)
+                .addContainerGap(33, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
