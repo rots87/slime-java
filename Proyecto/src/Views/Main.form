@@ -34,12 +34,20 @@
                 <Property name="text" type="java.lang.String" value="Usuario"/>
               </Properties>
               <SubComponents>
-                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
+                <MenuItem class="javax.swing.JMenuItem" name="mniNuevoUsuario">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Nuevo Usuario"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem2ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mniNuevoUsuarioActionPerformed"/>
+                  </Events>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="mniActivar">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Activar/Desactivar"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mniActivarActionPerformed"/>
                   </Events>
                 </MenuItem>
               </SubComponents>

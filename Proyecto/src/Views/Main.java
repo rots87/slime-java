@@ -38,7 +38,8 @@ public class Main extends javax.swing.JFrame {
         jMenu4 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
-        jMenuItem2 = new javax.swing.JMenuItem();
+        mniNuevoUsuario = new javax.swing.JMenuItem();
+        mniActivar = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         Salir = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
@@ -64,13 +65,21 @@ public class Main extends javax.swing.JFrame {
 
         jMenu3.setText("Usuario");
 
-        jMenuItem2.setText("Nuevo Usuario");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        mniNuevoUsuario.setText("Nuevo Usuario");
+        mniNuevoUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                mniNuevoUsuarioActionPerformed(evt);
             }
         });
-        jMenu3.add(jMenuItem2);
+        jMenu3.add(mniNuevoUsuario);
+
+        mniActivar.setText("Activar/Desactivar");
+        mniActivar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mniActivarActionPerformed(evt);
+            }
+        });
+        jMenu3.add(mniActivar);
 
         jMenu1.add(jMenu3);
         jMenu1.add(jSeparator1);
@@ -106,11 +115,11 @@ public class Main extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+    private void mniNuevoUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniNuevoUsuarioActionPerformed
         // TODO add your handling code here:
         new_user nUser = new new_user();
         nUser.setVisible(true);
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    }//GEN-LAST:event_mniNuevoUsuarioActionPerformed
 
     private void SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirActionPerformed
         // TODO add your handling code here:
@@ -125,6 +134,12 @@ public class Main extends javax.swing.JFrame {
         newP.setVisible(true);
         
     }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void mniActivarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniActivarActionPerformed
+        // TODO add your handling code here:
+        state_user sUser = new state_user();
+        sUser.setVisible(true);
+    }//GEN-LAST:event_mniActivarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -169,8 +184,9 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JMenuItem mniActivar;
+    private javax.swing.JMenuItem mniNuevoUsuario;
     // End of variables declaration//GEN-END:variables
 }
